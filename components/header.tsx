@@ -3,8 +3,7 @@ import { Navbar } from "./navbar";
 
 const Header = () => {
   return (
-    <header className="w-full h-36 flex items-center px-12">
-      <p>cart placeholder</p>
+    <header className="w-full flex flex-col gap-y-8 justify-between items-center pt-6 pb-6 shadow-md">
       <Logo />
       <Navbar />
     </header>

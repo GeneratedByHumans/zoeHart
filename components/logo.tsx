@@ -4,10 +4,9 @@ const Logo = () => {
   return (
     <Image
       src="/ZoeHartLogo.svg"
-      width={84}
-      height={84}
+      width={95}
+      height={106.3}
       alt="Image"
-      className="object-cover"
     />
   );
 };
