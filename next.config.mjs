@@ -1,4 +1,3 @@
-// Import the required module using ESM syntax
 import { hostname } from 'os';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
@@ -9,12 +8,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'aceternity.com',
             },
-
             {
                 protocol: 'https',
                 hostname: 'images.unsplash.com',
             }
-
         ],
     },
     webpack(config, { isServer }) {
@@ -27,7 +24,11 @@ const nextConfig = {
         }
         return config;
     },
+    i18n: {
+        locales: ['el-GR', 'en-US'], // List of locales your application supports
+        defaultLocale: 'en-US', // The default locale you want to use
+        localeDetection: true, // Automatically detect the locale from the user's device
+    },
 };
 
-// Use `export default` for ESM syntax
 export default nextConfig;
