@@ -16,43 +16,39 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components: { title: string; href: string; description: string }[] = [
+const components = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Bracelets",
+    href: "/category/bracelets",
+    description: "Explore a wide variety of bracelets, from bangles to charm bracelets."
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title: "Earrings",
+    href: "/category/earrings",
+    description: "Discover our collection of earrings, including studs, hoops, and drop earrings."
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "Necklaces",
+    href: "/category/necklaces",
+    description: "Browse our selection of necklaces, from simple chains to statement pieces."
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Rings",
+    href: "/category/rings",
+    description: "Find the perfect ring for every occasion, including engagement rings and stackables."
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title: "Sales",
+    href: "/category/sales",
+    description: "Access our sales section for great deals on a variety of jewelry pieces."
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Brands",
+    href: "/category/brands",
+    description: "Explore jewelry by your favorite brands and discover new ones."
   },
 ];
+
 
 export function Navbar() {
 

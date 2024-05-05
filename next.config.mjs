@@ -27,7 +27,7 @@ const nextConfig = {
     i18n: {
         locales: ['el-GR', 'en-US'], // List of locales your application supports
         defaultLocale: 'en-US', // The default locale you want to use
-        localeDetection: true, // Automatically detect the locale from the user's device
+        localeDetection: false, // Automatically detect the locale from the user's device
     },
 };
 
