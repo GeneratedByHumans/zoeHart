@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import Link from "next/link";
+import CartButton from "@/components/Cart/CartButton";
+import SearchBar from "./SearchBar/SearchBar";
 
 import { cn } from "@/lib/utils";
 import {
@@ -53,11 +55,13 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 export function Navbar() {
+
+  const cartQuantity = 5;
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>New-Ins</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -90,7 +94,7 @@ export function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -106,12 +110,13 @@ export function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/aboutus" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              About Us
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+
       </NavigationMenuList>
     </NavigationMenu>
   );
